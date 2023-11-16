@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="header .css">
+
+    <meta charseb="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVITUS KATUNZI VICTOR_PORTFOLIO</title>
+
+
+
+    <link rel="stylesheet" href="flex.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: light red;
+            color: dark charcoal;
+        }
+
+        header {
+            background-color: rgb(255, 187, 0);
+            color: rgb(0, 0, 0);
+            padding: 1em;
+            text-align: center;
+        }
+
+         header {
+            height: 120px;
+            position: relative;
+        }
+
+        
+        .header-image {
+            width: 108px; 
+            height: auto; 
+            display: block; 
+        }
+
+        .header-image.hidden {
+            display: none; 
+        }
+        
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            font-size: 12;
+            background-color: rgb(255, 187, 0);
+            color: #000000;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+
+        }
+        .black-link {
+    color: black; 
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header onmouseover="changeImage(this)" onmouseout="restoreImage(this)">
+        <h1>AVITUS KATUNZI VICTOR </h1>
+        <p>GRAPHICS DESIGNER</p>   
+        <img src="roxtam.jpg" alt="First Image" class="header-image" onmouseover="changeImage()" onmouseout="restoreImage()">
+        <!-- Replace with your first image URL -->
+        <img src="roxtam1.png" alt="Second Image" class="header-image hidden">
+    </header>
+
+    
+
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+
+As a graphics designer, I'm the visual storyteller, crafting narratives through artistry and design. I'm a master of visual communication, blending creativity with technical prowess to bring concepts to life. My canvas isn't just a screen or paper; it's a space where ideas take form, colors evoke emotions, and typography breathes character. I'm a problem-solver, using my skills to translate complex ideas into captivating visuals that resonate with audiences. I'm the architect of aesthetics, creating designs that not only look beautiful but also carry meaning and purpose.
+        </p>
+    </section>
+
+    <section>
+        <p><h2>University Information (2020 - 2024) </h2>
+        <h3>University</h3>
+        Dar Es Salaam Institute Of Technology.
+        <h3>Course</h3>
+        Information Technology.
+        <h3>Class</h3>
+        OD21IT.
+        <h3>Registration Number</h3>
+        2102209210121</p>
+    </section>
+
+    <section>
+        <h2>Ordinary level School Information (2017 - 2020)</h2>
+        <h3>School</h3>
+        <p>Sacred Heart Secondary School</p>
+        <h3>Examination Number</h3>
+        <p>S4567/0066/2020</p>
+    </section>
+
+
+    <section>
+        <h2>Primary level School Information (2010 - 2016)</h2>
+        <h3>School</h3>
+        <p>Rwamishenye Primary School</p>
+        
+    </section>
+
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: avitusvictor@yahoo.com</p>
+        <p></p>
+        <p>GitHub: github.com/Roxtam</p>
+    </section>
+
+ 
+
+    <footer>
+
+            <div class="icon-container">
+                <a href="https://instagram.com/videoadventurist?igshid=MTNiYzNiMzkwZA%3D%3D&utm_source=qr" class="black-link"><img src="instagram_logo.png" alt="Instagram" height="16px" width="16px">&nbsp; Instagram &nbsp; &nbsp;</a>
+                <a href="https://wa.me/255786725758" class="black-link"><img src="whatsapp_logo.png" alt="Whatsapp" height="16px" width="16px">&nbsp; Whatsapp &nbsp; &nbsp;</a>
+                <a href="https://github.com/Roxtam" class="black-link"><img src="github_logo.png" alt="Github" height="16px" width="16px"> &nbsp;Github &nbsp; &nbsp;</a>
+                <a href="https://twitter.com/roxtam_" class="black-link"><img src="x_logo.png" alt="X" height="16px" width="16px">&nbsp; X.com &nbsp; &nbsp;</a>
+                <a href="tel:+255786725758" class="black-link"><img src="telephone_logo.png" alt="Call me" height="16" width="16">&nbsp; Call Me &nbsp; &nbsp;</a>
+                <a href="sms:+255786725758" class="black-link"><img src="sms_logo.png" alt="Send a Message" height="16" width="16">&nbsp; Send a message &nbsp; &nbsp;</a>
+
+            </div>
+     </footer>
+
+
+     <script>
+        function changeImage() {
+            document.querySelectorAll('.header-image')[0].classList.add('hidden'); // Hide first image
+            document.querySelectorAll('.header-image')[1].classList.remove('hidden'); // Show second image
+        }
+
+        function restoreImage() {
+            document.querySelectorAll('.header-image')[1].classList.add('hidden'); // Hide second image
+            document.querySelectorAll('.header-image')[0].classList.remove('hidden'); // Show first image
+        }
+    </script>
+</body>
+</html>
